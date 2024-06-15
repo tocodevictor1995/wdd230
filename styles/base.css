@@ -1,0 +1,115 @@
+:root {
+    --box-color: rgb(3, 113, 36);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 29, 16);
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: var(--box-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    gap: 30px;
+}
+
+header span {
+    color: white;
+    font-size: 40px;
+}
+
+header img {
+    width: 150px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+nav {
+    margin: 0px 20px;
+    background-color: rgba(3, 113, 45, 0.8);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 0.9rem;
+}
+
+nav li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+main h1 {
+    margin: 25px;
+    text-align: center;
+}
+
+.cards {
+    margin: 1rem 2vw;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    margin: 20px;
+    border: 1px solid var(--box-color);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card h2 {
+    padding: 10px;
+    background-color: var(--box-color);
+    text-align: center;
+}
+
+.card ul {
+    list-style-type: none;
+}
+
+.card a {
+    text-decoration: none;
+    color: rgb(58, 240, 128);
+}
+
+.card ul li {
+    margin: 10px 20px;
+}
+
+.card p {
+    text-align: center;
+    padding: 10px 5px;
+}
+
+footer {
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    background-color: var(--box-color);
+}
+
+footer p {
+    margin-bottom: 7.5px;
+}

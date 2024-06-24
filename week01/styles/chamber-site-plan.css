@@ -2,10 +2,10 @@
     --primary-color: #B20101;
     --secondary-color: #273E47;
     --accent1-color: #D8973C;
-    --accent2-color: White;
+    --accent2-color: #FFFFFF;
 
-    --heading-font: 'bebas neue';
-    --paragraph-font: poppins, Verdana, Geneva, Tahoma, sans-serif;
+    --heading-font: 'Bebas Neue', sans-serif;
+    --paragraph-font: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
 
     --headline-color-on-white: #273E47;
     /* headlines on a white background */
@@ -16,14 +16,11 @@
     --paragraph-color-on-color: white;
     /* paragraph text on a colored background */
     --paragraph-background-color: #273E47;
-    --nav-link-color: White;
+    --nav-link-color: #FFFFFF;
     --nav-background-color: #B20101;
     --nav-hover-link-color: #B20101;
-    --nav-hover-background-color: white;
-
+    --nav-hover-background-color: #FFFFFF;
 }
-
-
 
 body {
     margin: 0 auto;
@@ -38,22 +35,15 @@ img {
     max-width: 300px;
 }
 
-
-
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     font-family: var(--heading-font);
-    color: var(--headline-color-on-white)
+    color: var(--headline-color-on-white);
 }
-
 
 hr {
     height: 3px;
     margin: 35px 0;
     background: var(--accent1-color);
-
 }
 
 header {
@@ -63,8 +53,7 @@ header {
     background-color: var(--paragraph-background-color);
 }
 
-header>h1,
-header>h2 {
+header > h1, header > h2 {
     color: var(--headline-color-on-color);
 }
 
@@ -112,11 +101,9 @@ nav {
     line-height: 3em;
     text-align: center;
     font-size: 1.2em;
-}
-
-nav {
     list-style-type: none;
     display: flex;
+    justify-content: center;
 }
 
 nav a {
@@ -124,10 +111,6 @@ nav a {
     min-width: 120px;
     text-decoration: none;
     padding: 10px;
-}
-
-nav a:link,
-nav a:visited {
     color: var(--nav-link-color);
 }
 

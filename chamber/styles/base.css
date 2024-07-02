@@ -1,0 +1,166 @@
+body {
+    font-family: 'poppins', verdana, Tahoma;
+    background: url('path/to/your/background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #bbbbbb; 
+    z-index: -1; 
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Bebas Neue';
+}
+
+:root {
+    --primary-color: #050505;
+    --secondary-color: #273e47;
+    --accent1-color: #ffffff;
+    --accent2-color: white;
+
+    --navigation-and-footer: var(--primary-color);
+    --nav-text-color: var(--accent2-color);
+    --text-body-color: var(--secondary-color);
+
+    --hover-nav-text: var(--primary-color);
+    --hover-nav-bg: var(--accent2-color);
+}
+
+.navigation {
+    text-align: center;
+    background-color: var(--navigation-and-footer);
+    color: var(--nav-text-color);
+}
+
+#hero {
+    display: block;
+}
+
+main {
+    display: block;
+    text-align: center;
+}
+
+#menu::before {
+    content: '≡';
+    color: var(--accent2-color);
+    background-color: var(--navigation-and-footer);
+    outline: 0;
+    font-size: 2rem;
+    display: block;
+}
+
+#menu {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.menu-container {
+    text-align: right;
+    background-color: var(--primary-color);
+}
+
+#menu.open::before {
+    content: '✕';
+}
+
+#calgary-image {
+    width: 70%;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#calgary-img {
+    width: 100%;
+}
+
+button {
+    background-color: var(--accent1-color);
+    padding: 1rem;
+    border-radius: 0%;
+    color: black;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+}
+
+
+.join-button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.join-button:hover {
+    background-color: var(--accent1-color);
+    color: black; 
+}
+
+#hero-text {
+    text-align: center;
+    vertical-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent2-color);
+    display: none;
+    padding: 10px;
+}
+
+.open a {
+    display: block;
+}
+
+footer {
+    display: block;
+    background-color: var(--navigation-and-footer);
+    color: var(--nav-text-color);
+    padding: 5px;
+    text-align: center; 
+}
+
+nav a:hover {
+    color: var(--hover-nav-text);
+    background-color: var(--hover-nav-bg);
+}
+
+#logo-box:hover {
+    background-color: var(--primary-color);
+}
+
+#logo-box {
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+}
+
+#logo-link {
+    color: white;
+}
+
+.logo {
+    width: 200px;
+    height: 154px;
+}

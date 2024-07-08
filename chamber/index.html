@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/dark-mode.css"> <!-- Novo arquivo para modo escuro -->
 
     <link rel="icon" href="favicon.ico">
 
@@ -35,11 +36,14 @@
                 <img class="logo" src="images/logo.png" alt="Calgary Chamber Of Commerce Logo">
             </a>
         </div>
+        <div id="dark-mode-toggle">
+            <button id="dark-mode-btn">🌙</button> <!-- Adicionado ícone de lua diretamente no botão -->
+        </div>
         <nav class="navigation" id="navigation-bar">
 
-            <a href="">Home</a>
-            <a href="">[Page 1]</a>
-            <a href="">[Page 2]</a>
+            <a href="#">Home</a>
+            <a href="#">[Page 1]</a>
+            <a href="#">[Page 2]</a>
         </nav>
     </header>
     <div id="hero">
@@ -47,10 +51,11 @@
             <img src="images/hero-curitiba.webp" alt="City of Calgary" id="hero-img">
         </div>
         <section id="hero-text">
-            <h1>Calgary Chamber of Commerce</h1>
-            <h2>Enjoy Member Benefits! </h2>
-            <button class="join-button">JOIN</button>
-
+            <div class="hero-text-content">
+                <h1>Calgary Chamber of Commerce</h1>
+                <h2>Enjoy Member Benefits!</h2>
+                <button class="join-button">JOIN</button>
+            </div>
         </section>
     </div>
     <main class="home-content">
@@ -84,8 +89,6 @@
         <p id="lastmodified"></p>
     </footer>
     <script src="scripts/index.js"></script>
-
-
 </body>
 
 </html>

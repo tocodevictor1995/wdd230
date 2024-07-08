@@ -6,6 +6,7 @@
     <title>Victor Silva - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development, Victor Cordeiro Gomes da Silva, Course tasks portal">
     <meta name="author" content="Victor Cordeiro Gomes da Silva">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 
@@ -13,20 +14,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://img.freepik.com/fotos-gratis/paisagem-bonita-da-cidade-de-alto-angulo_23-2149444904.jpg?t=st=1720040082~exp=1720043682~hmac=e5bf485d70264af0c2fffb9f197b0e1f73e2944e273df4ed5db6a796373322dc&w=1380">
+    <meta property="og:url" content="https://tocodevictor1995.github.io/wdd230/index.html">
 </head>
 <body>
     <header>
+        <img src="images/dark-mode-icon.svg" alt="Dark Mode / light mode button" id="dm-button">
         <img src="images/victor.jpg" alt="Profile Picture">
         <span>Victor Codeiro G.da Silva</span>
     </header>
-    <nav>
-        <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="chamber/index.html">Chamber</a></li>
-            <li><a href="week01\chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="#">Form</a></li>
-        </ul>
+    <div class="menu-color"><button id="menu"></button></div>
+    <nav class="navigation">
+        <a href="">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="week01/chamber-site-plan.html">Site Plan</a>
+        <a href="">Form</a>
     </nav>
+    <div class="hero">
+        <picture>
+            <source srcset="images/curitiba-temple.avif" media="(max-width: 400px)">
+            <source srcset="images/curitiba-temple.avif" media="(max-width: 960px)">
+            <img src="images/curitiba-temple.avif" alt="Curitiba Temple" width="1279" height="640">
+        </picture>
+        <div class="hero-label">
+            <p>Curitiba Temple</p>
+        </div>
+    </div>
     <main>
         <h1>WDD 230 - Web Frontend Development</h1>
         
@@ -38,7 +54,7 @@
                         Query</a> | <a href="https://codepen.io/ijromerob/pen/BaemoPv">Applied Javascript Activity</a>
                 </li>
                 <li>Week 2:<a href="week02/design.html">Design</a> | <a
-                        href="https://codepen.io/ijromerob/pen/ZENrEXP">Hamburger Menu</a> | <a href="week02/bom.html">
+                        href="https://codepen.io/ijromerob/pen/ZENrEXP">Hamburger Menu</a> | <a href="week02/book of mormon.html">
                         Book of Mormon - DOM Manipulation</a></li>
                 <li>Week 3:<a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">lazy
                         Loading</a></li>
@@ -56,11 +72,19 @@
             </section>
         </div>
     </main>
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20045.101193533!2d-113.97467545!3d51.0966944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1719444895168!5m2!1sen!2sca"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
     <footer>
         <p>&copy; <span id="currentYear"></span> Victor Silva - Brazil</p>
         <p id="lastModified">Last Modification: </p>
     </footer>
 
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 </html>

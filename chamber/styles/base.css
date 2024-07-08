@@ -1,5 +1,7 @@
+/* base.css */
+
 body {
-    font-family: 'poppins', verdana, Tahoma;
+    font-family: 'Poppins', verdana, Tahoma;
     background: url('path/to/your/background-image.jpg') no-repeat center center fixed;
     background-size: cover;
     position: relative;
@@ -19,10 +21,7 @@ body::before {
     z-index: -1; 
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     font-family: 'Bebas Neue';
 }
 
@@ -100,7 +99,6 @@ button {
     height: 50px;
 }
 
-
 .join-button {
     background-color: black;
     color: white;
@@ -117,10 +115,14 @@ button {
     color: black; 
 }
 
+
 #hero-text {
     text-align: center;
     vertical-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo transparente para melhorar legibilidade */
+    padding: 20px; /* Espaçamento interno para o texto */
 }
+
 
 nav a {
     text-decoration: none;

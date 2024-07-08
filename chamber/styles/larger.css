@@ -1,12 +1,12 @@
-@media screen and (min-width: 600px) {
+/* larger.css */
 
+@media screen and (min-width: 600px) {
     #hero {
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;
         grid-template-rows: 1fr 1fr;
         margin-top: 0px;
     }
-
 
     #hero-box {
         grid-column: 1/4;
@@ -18,7 +18,6 @@
         grid-column: 2/3;
         grid-row: 1/2;
         margin-top: 100px;
-
     }
 
     main {
@@ -61,25 +60,21 @@
         display: none;
     }
 
-    nav a {
-        display: block;
-        padding: 70px;
-        margin-left: 50px;
-    }
-
-    #hero-text {
-        background-color: rgba(126, 126, 126, 0.8);
-    }
-
     .navigation {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-end;
-        padding-left: 10px;
-        padding-right: 20px;
-        padding-top: 0px;
-        padding-bottom: 0px;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--primary-color);
     }
 
+    nav a {
+        display: block;
+        padding: 10px;
+        color: var(--accent2-color);
+    }
 
+    #menu::before {
+        display: none;
+    }
 }

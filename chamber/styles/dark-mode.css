@@ -1,0 +1,34 @@
+/* dark-mode.css */
+
+body.dark-mode {
+    background-color: #121212; /* Dark background color */
+    color: #ffffff; /* Light text color */
+}
+
+.dark-mode #hero-text {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background for hero text */
+}
+
+.dark-mode .navigation {
+    background-color: #121212; /* Dark navigation background */
+    color: #ffffff; /* Light navigation text color */
+}
+
+.dark-mode nav a:hover {
+    color: #ffffff; /* Light hover text color */
+    background-color: #273e47; /* Dark hover background color */
+}
+
+.dark-mode #logo-box:hover {
+    background-color: #050505; /* Dark logo box hover color */
+}
+
+.dark-mode .join-button {
+    background-color: #ffffff; /* White button background */
+    color: #000000; /* Dark button text color */
+}
+
+.dark-mode .join-button:hover {
+    background-color: #050505; /* Dark button background on hover */
+    color: #ffffff; /* White button text on hover */
+}

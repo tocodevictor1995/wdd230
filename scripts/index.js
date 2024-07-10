@@ -1,5 +1,3 @@
-
-
 // hamburguer button
 const hButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
@@ -9,9 +7,7 @@ hButton.addEventListener('click', () => {
     hButton.classList.toggle('open');
 })
 
-
 // dark mode button
-
 const darkModeButton = document.querySelector('#dm-button');
 
 darkModeButton.addEventListener('click', () => {
@@ -38,7 +34,7 @@ darkModeButton.addEventListener('click', () => {
 })
 
 //visits to the page
-const visits = document.querySelector('.visits')
+const visits = document.querySelector('#visitCount')
 
 let visitsNumber = getVisits() || 0;
 
@@ -64,3 +60,7 @@ function displayVisit() {
 function getVisits() {
     return Number(localStorage.getItem('visits'));
 }
+
+// Atualiza o ano atual e a última modificação
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent += document.lastModified;

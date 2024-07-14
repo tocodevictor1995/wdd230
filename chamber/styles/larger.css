@@ -1,12 +1,12 @@
-/* larger.css */
-
 @media screen and (min-width: 600px) {
+
     #hero {
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;
         grid-template-rows: 1fr 1fr;
-        margin-top: 0px;
+        margin-top: -100px;
     }
+
 
     #hero-box {
         grid-column: 1/4;
@@ -18,6 +18,7 @@
         grid-column: 2/3;
         grid-row: 1/2;
         margin-top: 100px;
+
     }
 
     main {
@@ -60,21 +61,56 @@
         display: none;
     }
 
+    nav a {
+        display: block;
+        padding: 25px;
+        margin-left: 50px;
+    }
+
+    #hero-text {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
     .navigation {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        background-color: var(--primary-color);
+        justify-content: flex-end;
+        padding-left: 10px;
+        padding-right: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 
-    nav a {
-        display: block;
-        padding: 10px;
-        color: var(--accent2-color);
+    .discovery-main {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr repeat(6, 8fr);
     }
 
-    #menu::before {
-        display: none;
+    .title-box {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        height: 1em;
+    }
+
+    .side-bar {
+        grid-column: 1/2;
+        grid-row: 2/8;
+    }
+
+    .Curitiba-images p {
+        font-size: 1.5rem;
+    }
+
+    .side-bar {
+        border: 1px solid rgb(53, 53, 53);
+        margin-left: 20px;
+        margin-top: 15px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
+
+    .Curitiba-image-discovery:hover {
+        transform: scaleX(-1);
     }
 }

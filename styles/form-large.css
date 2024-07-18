@@ -1,0 +1,36 @@
+@media screen and (min-width: 550px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .hero-label {
+        font-size: 2rem;
+    }
+
+    .navigation a {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav a {
+        flex-grow: 1;
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        display: grid;
+        grid-template: 1fr / 1fr;
+        justify-items: center;
+    }
+
+    form {
+        width: 60%;
+    }
+}

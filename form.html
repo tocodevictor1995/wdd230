@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the webpage for the team activity - form">
+    <meta name="author" content="Victor Silva">
+    <title>Form Activity</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <meta property="og:title" content="Form">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1556475163-278eb3f49b1a?q=80&w=1838&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://ijromerob.github.io/wdd230/form.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="menu-container"><button id="menu"></button></div>
+        <div id="logo-box">
+            <a href="index.html" id="logo-link">
+                <img class="logo" src="images/victor.jpg" alt="Victor Silva Logo">
+            </a>
+        </div>
+        <nav class="navigation" id="navigation-bar">
+            <a href="index.html">Home</a>
+            <a href="chamber/index.html">Chamber</a>
+            <a href="week01/chamber-site-plan.html">Site Plan</a>
+            <a href="form.html" class="active">Form</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Registration Form</h1>
+        <form method="get" class="wf1" action="record.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>Username*<input type="text" name="username" required id="username"></label>
+                <label>Password*<input type="password" name="password" id="password1" pattern="[a-zA-Z0-9]{8}" required
+                        placeholder="Min: eight (8) alpha-numeric characters"></label>
+                <div id="message"></div>
+                <label>Repeat Password*<input type="password" name="password" id="password2" required
+                        pattern="[a-zA-Z0-9]{8}"></label>
+                <label>Email*<input type="email" name="email" id="email"
+                        pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid email address"
+                        placeholder="example@byui.edu"></label>
+                <div class="range-container">
+                    <label id="rangelabel" for="rangeinput">Page Rating
+                        <input id="rangeinput" type="range" min="1" max="10" step="1" list="rangevalues" value="0">
+                        <datalist id="rangevalues">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </datalist>
+                    </label>
+                    <div id="rangevalue"></div>
+                </div>
+            </fieldset>
+            <input type="submit" value="Register">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> Victor Silva - Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>

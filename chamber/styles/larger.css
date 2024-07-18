@@ -21,7 +21,7 @@
 
     }
 
-    main {
+    #home-content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -29,18 +29,19 @@
 
     section:nth-child(1) {
         grid-column: 1/2;
-        grid-row: 1/2;
+        grid-row: 1/3;
     }
 
     section:nth-child(2) {
         grid-column: 3/4;
-        grid-row: 1/2;
+        grid-row: 1/3;
     }
 
     .image-box {
         grid-column: 2/3;
-        grid-row: 2/3;
+        grid-row: 1/3;
     }
+
 
     section:nth-child(4) {
         grid-column: 1/2;
@@ -98,19 +99,44 @@
         grid-row: 2/8;
     }
 
-    .Curitiba-images p {
+    .curitiba-images p {
         font-size: 1.5rem;
     }
 
     .side-bar {
-        border: 1px solid rgb(53, 53, 53);
+        border: 1px solid rgb(185, 185, 185);
         margin-left: 20px;
         margin-top: 15px;
         margin-right: 5px;
         margin-bottom: 20px;
     }
 
-    .Curitiba-image-discovery:hover {
+    .curitiba-image-discovery:hover {
         transform: scaleX(-1);
+    }
+
+    /* Form web page ------------------- */
+
+    #join-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 15fr;
+        margin: 20px;
+    }
+
+    #register-title {
+        grid-column: 1/3;
+        grid-row: 1/2;
+
+    }
+
+    #membership-description {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    form {
+        grid-column: 1/2;
+        grid-row: 2/3;
     }
 }

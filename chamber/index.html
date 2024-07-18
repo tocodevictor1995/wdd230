@@ -4,23 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is Calgary's Chamber of Commerce website">
+    <meta name="description" content="This is Curitiba's Chamber of Commerce website">
     <meta name="author" content="Victor Silva">
 
-    <title>Calgary's Chamber of Commerce</title>
+    <title>Curitiba's Chamber of Commerce</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/dark-mode.css"> <!-- Novo arquivo para modo escuro -->
 
     <link rel="icon" href="favicon.ico">
 
-    <meta property="og:title" content="Calgary Chamber of Commerce">
+    <meta property="og:title" content="Curitiba Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image"
-        content="https://i1.wp.com/prediosdecuritiba.com.br/wp-content/uploads/2021/06/IMG-20201007-WA0009-1.jpg?resize=1024%2C767&ssl=1">
-    
+        content="https://images.unsplash.com/photo-1556475163-278eb3f49b1a?q=80&w=1838&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://tocodevictor1995.github.io/wdd230/index.html">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500&display=swap"
@@ -33,62 +33,81 @@
         <div class="menu-container"><button id="menu"></button></div>
         <div id="logo-box">
             <a href="index.html" id="logo-link">
-                <img class="logo" src="images/logo.png" alt="Calgary Chamber Of Commerce Logo">
+                <img class="logo" src="images/logo.png" alt="Curitiba Chamber Of Commerce Logo">
             </a>
         </div>
-        <div id="dark-mode-toggle">
-            <button id="dark-mode-btn">🌙</button> <!-- Adicionado ícone de lua diretamente no botão -->
-        </div>
         <nav class="navigation" id="navigation-bar">
-            <a href="index.html">Home</a>
+
+            <a class="active" href="index.html">Home</a>
             <a href="discover.html">Discover</a>
-            <a href="#">[Page 1]</a>
-            <a href="#">[Page 2]</a>
+            <a href="join.html">Join</a>
+            <a href="directory.html">Directory</a>
         </nav>
     </header>
     <div id="hero">
         <div id="hero-box">
-            <img src="images/hero-curitiba.webp" alt="City of Calgary" id="hero-img">
+            <img src="images/hero-curitiba.webp" alt="City of Curitiba" id="hero-img">
         </div>
         <section id="hero-text">
-            <div class="hero-text-content">
-                <h1>Calgary Chamber of Commerce</h1>
-                <h2>Enjoy Member Benefits!</h2>
-                <button class="join-button">JOIN</button>
-            </div>
+            <h1>Curitiba Chamber of Commerce</h1>
+            <h2>Enjoy Member Benefits! </h2>
+            <button onclick="document.location ='join.html'">Join</button>
         </section>
     </div>
-    <main class="home-content">
-        <section>
-            <h2>Events</h2>
-            <div></div>
+    <dialog id="event-banner">
+        <h2>Upcoming Meet and Greet Event!</h2>
+        <p>Wednesday 7:00 p.m.</p>
+        <p>Curitiba Chamber of Commerce Building</p>
+        <button id="banner-exit">✕</button>
+    </dialog>
+    <main id="home-content">
+        <section id="current-events">
+            <h2>Current Events</h2>
+            <div class="event">
+                <h3>Business Networking Breakfast</h3>
+                <p>August 12, 2024</p>
+                <p>Curitiba Downtown Marriott</p>
+            </div>
+            <div class="event">
+                <h3>Small Business Workshop: Marketing Strategies</h3>
+                <p>August 25, 2024</p>
+                <p>Curitiba Public Library, Central Branch</p>
+            </div>
+            <div class="event">
+                <h3>Annual General Meeting</h3>
+                <p>September 5, 2024</p>
+                <p>Telus Convention Centre</p>
+            </div>
         </section>
-        <section>
+        <section id="weather">
             <h2>Weather</h2>
-            <div></div>
+            <div id="weather-container">
+                <h3>Current Weather</h3>
+            </div>
+            <div id="forecast-container">
+                <h3>Forecast</h3>
+            </div>
         </section>
         <div class="image-box">
-            <img src="images/xv.jpg" alt="Calgary xv - Calgary AB" id="calgary-image">
+            <img src="images/curitiba Tower.png" alt="Curitiba Tower" id="curitiba-image">
+            <br>
+            <img src="images/curitiba-night.jpg" alt="Curitiba" id="curitiba-image">
         </div>
-        <section>
-            <h2>[Company 1 ad]</h2>
-            <div></div>
+        <section class="company-ad">
         </section>
-        <section>
-            <h2>[Company 2 ad]</h2>
-            <div></div>
+        <section class="company-ad">
         </section>
-        <section>
-            <h2>[Company 3 ad]</h2>
-            <div></div>
+        <section class="company-ad">
         </section>
     </main>
     <footer>
-        <p>&copy;<span id="year"></span> Victor Silva.</p>
+        <p>&copy;<span id="year"></span> Victor Silva</p>
         <p>This is a project for WDD 230 - Web Frontend Development I</p>
         <p id="lastmodified"></p>
     </footer>
     <script src="scripts/index.js"></script>
+
+
 </body>
 
 </html>

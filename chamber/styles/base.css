@@ -80,6 +80,11 @@ main {
 #Curitiba-img {
     width: 100%;
 }
+.event {
+    margin: 50px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
 
 button {
     background-color: var(--accent1-color);
@@ -189,4 +194,256 @@ nav a:hover {
 .side-info {
     border: 1px solid rgb(185, 185, 185);
     margin: 10px;
+}
+/* Form wepage --------------------- */
+
+.memberships {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 25px;
+    text-align: left;
+}
+
+.memberships>h3 {
+    text-align: center;
+}
+
+.initial {
+    font-weight: bold;
+}
+
+#np-m {
+    background-color: rgb(147, 199, 147);
+}
+
+#bronze-m {
+    background-color: #d89f70;
+}
+
+#silver-m {
+    background-color: rgb(199, 199, 199);
+}
+
+#gold-m {
+    background-color: rgb(236, 236, 153);
+}
+
+li {
+    margin: 15px;
+}
+
+form {
+    text-align: left;
+    margin: 15px;
+}
+
+label {
+    display: block;
+    margin: 20px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea {
+    display: block;
+    width: 85%;
+    border: none;
+    background-color: rgb(240, 235, 235);
+    border-radius: 5px;
+}
+
+#description {
+    width: 85%;
+    padding: 10px;
+}
+
+input {
+    padding: 10px;
+}
+
+fieldset {
+    border-radius: 5px;
+    margin: 15px;
+}
+
+#membership {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: -10px;
+}
+
+input[type='submit'] {
+    margin-left: 50px;
+    border: none;
+    background-image: linear-gradient(var(--accent1-color), rgb(255, 255, 0));
+    width: 10em;
+    cursor: pointer;
+}
+
+input:required {
+    border-left: 5px solid red;
+}
+
+input:required:valid {
+    border-left: 5px solid rgb(1, 163, 1);
+}
+
+#position:invalid {
+    background-color: #f78b8b;
+}
+
+input[type='radio'] {
+    margin-right: 6px;
+}
+/* Chamber Directory */
+
+#buttons-container {
+    background-color: #8f0101;
+    padding: 10px;
+    margin-top: -4px;
+
+}
+
+#buttons-container button {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    grid-gap: 15px;
+    margin: 15px;
+}
+
+.grid .company-card {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.grid .company-card>* {
+    margin: 10px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.list div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.list div img {
+    display: none;
+}
+
+.list div>* {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+}
+
+.companies-imgs {
+    width: 40%;
+}
+/* Current Weather and weather forecast */
+
+#weather {
+    margin-top: 20px;
+}
+
+.miniWeatherCard {
+    border: 1px solid black;
+    width: 25%;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#minicards-forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.forecast-button {
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 0px;
+    background-color: rgba(98, 98, 98, 0.5);
+    border: none;
+}
+
+.forecast-button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+#left-button {
+    margin-right: -15px;
+}
+
+#right-button {
+    margin-left: -15px;
+}
+
+#forecast-container {
+    margin-bottom: 50px;
+}
+
+.company-ad>* {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 5px;
+}
+
+.company-ad {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.image-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-box img {
+    max-width: 70%; /* Reduzir a largura da imagem para 70% da largura do container pai */
+    height: auto; /* Altura automática para manter a proporção */
+    display: block; /* Garante que a imagem se comporte como um bloco */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    border-radius: 5%; /* Adiciona borda arredondada */
+}
+
+section:nth-child(1) {
+    margin: 20px;
+}
+
+
+
+#event-banner {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 50px;
+    border: 10px solid var(--primary-color);
+    position: relative;
+}
+
+
+#banner-exit {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: white;
+    border: 10px solid var(--primary-color);
+    border-radius: 30%;
+    font-size: 1rem;
 }

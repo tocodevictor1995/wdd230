@@ -1,77 +1,58 @@
-const companiesUrl = "https://ijromerob.github.io/wdd230/chamber/data/members.json";
-const mainElement = document.querySelector('#companies');
+document.addEventListener("DOMContentLoaded", function () {
+    const companiesContainer = document.getElementById('companies');
+    const gridButton = document.getElementById('grid');
+    const listButton = document.getElementById('list');
 
-async function GetCompanies() {
-    const response = await fetch(companiesUrl);
-    if (response.ok) {
-        const data = await response.json();
-        DisplayMembers(data);
-    }
-}
+    fetch('data/members.json')
+        .then(response => response.json())
+        .then(data => {
+            displayCompanies(data.companies, 'grid');
+        });
 
-function DisplayMembers({ companies }) {
-    companies.forEach(({ name, address, phone, url, imgFile, membershipLevel }) => {
-        const section = document.createElement('div');
-        const companyImage = document.createElement('img');
-        const companyName = document.createElement('h3');
-        const companyAddress = document.createElement('p');
-        const companyPhone = document.createElement('p');
-        const companyWebSite = document.createElement('a');
-        const companyMembership = document.createElement('p');
-
-        section.setAttribute('class', 'company-card')
-        companyName.innerText = name;
-        companyImage.setAttribute('src', "images/" + imgFile);
-        companyImage.setAttribute('alt', name + " logo");
-        companyImage.setAttribute('class', 'companies-imgs');
-        companyAddress.innerText = address;
-        companyPhone.innerText = phone;
-        companyWebSite.innerText = "Company Website";
-        companyWebSite.setAttribute('href', url);
-        companyMembership.innerText = membershipLevel;
-
-        section.appendChild(companyName);
-        section.appendChild(companyImage);
-        section.appendChild(companyAddress);
-        section.appendChild(companyPhone);
-        section.appendChild(companyWebSite);
-        section.appendChild(companyMembership);
-        mainElement.appendChild(section);
-
+    gridButton.addEventListener('click', () => {
+        fetch('data/members.json')
+            .then(response => response.json())
+            .then(data => {
+                displayCompanies(data.companies, 'grid');
+            });
     });
 
-}
+    listButton.addEventListener('click', () => {
+        fetch('data/members.json')
+            .then(response => response.json())
+            .then(data => {
+                displayCompanies(data.companies, 'list');
+            });
+    });
 
+    function displayCompanies(companies, view) {
+        companiesContainer.innerHTML = '';
+        companiesContainer.className = view;
 
-GetCompanies();
+        companies.forEach(company => {
+            const companyElement = document.createElement('div');
+            companyElement.className = 'company';
 
-//buttons
-const gridbutton = document.querySelector('#grid');
-const listbutton = document.querySelector('#list');
+            if (view === 'grid') {
+                companyElement.innerHTML = `
+                    <img src="images/${company.imgFile}" alt="${company.name} logo">
+                    <h2>${company.name}</h2>
+                    <p>${company.address}</p>
+                    <p>${company.phone}</p>
+                    <a href="${company.url}">${company.url}</a>
+                    <p>${company.membershipLevel}</p>
+                `;
+            } else {
+                companyElement.innerHTML = `
+                    <h2>${company.name}</h2>
+                    <p>${company.address}</p>
+                    <p>${company.phone}</p>
+                    <a href="${company.url}">${company.url}</a>
+                    <p>${company.membershipLevel}</p>
+                `;
+            }
 
-
-gridbutton.addEventListener('click', () => {
-    mainElement.classList.add('grid');
-    mainElement.classList.remove('list');
+            companiesContainer.appendChild(companyElement);
+        });
+    }
 });
-
-listbutton.addEventListener('click', () => {
-    mainElement.classList.add('list');
-    mainElement.classList.remove('grid');
-});
-
-
-// hamburguer button
-const hButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
-
-hButton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    hButton.classList.toggle('open');
-})
-
-//get date for the website
-document.getElementById('year').textContent = new Date().getFullYear();
-
-document.getElementById('lastmodified').textContent = `Last modified: ${document.lastModified}`;
-

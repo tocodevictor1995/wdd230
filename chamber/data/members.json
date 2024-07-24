@@ -1,0 +1,60 @@
+{
+    "companies": [
+        {
+            "name": "Rede Massa",
+            "address": "Rua Aluízio Finzetto, 300, Curitiba, PR",
+            "phone": "(41) 3218-3000",
+            "url": "https://www.redemassa.com.br",
+            "imgFile": "rede_massa_logo.png",
+            "membershipLevel": "Gold Membership"
+        },
+        {
+            "name": "Gazeta do Povo",
+            "address": "Av. Desembargador Westphalen, 1686, Curitiba, PR",
+            "phone": "(41) 3321-5000",
+            "url": "https://www.gazetadopovo.com.br",
+            "imgFile": "gazeta_povo_logo.png",
+            "membershipLevel": "Silver Membership"
+        },
+        {
+            "name": "O Boticário",
+            "address": "Rua dos Palotinos, 1150, São José dos Pinhais, PR",
+            "phone": "(41) 3381-7000",
+            "url": "https://www.boticario.com.br",
+            "imgFile": "boticario_logo.png",
+            "membershipLevel": "Gold Membership"
+        },
+        {
+            "name": "Positivo Tecnologia",
+            "address": "Rua João Bettega, 5200, Curitiba, PR",
+            "phone": "(41) 3316-5800",
+            "url": "https://www.positivotecnologia.com.br",
+            "imgFile": "positivo_logo.png",
+            "membershipLevel": "Silver Membership"
+        },
+        {
+            "name": "Grupo Barigui",
+            "address": "Av. Pres. Arthur da Silva Bernardes, 1155, Curitiba, PR",
+            "phone": "(41) 3014-9800",
+            "url": "https://www.grupobarigui.com.br",
+            "imgFile": "barigui_logo.png",
+            "membershipLevel": "Bronze Membership"
+        },
+        {
+            "name": "Banco Bradesco",
+            "address": "Rua José Loureiro, 416, Curitiba, PR",
+            "phone": "(41) 3221-3100",
+            "url": "https://www.bradesco.com.br",
+            "imgFile": "bradesco_logo.png",
+            "membershipLevel": "Gold Membership"
+        },
+        {
+            "name": "Coca-Cola FEMSA",
+            "address": "Rua Brigadeiro Franco, 1981, Curitiba, PR",
+            "phone": "(41) 3312-5000",
+            "url": "https://www.cocacolabrasil.com.br",
+            "imgFile": "cocacola_femsa_logo.png",
+            "membershipLevel": "Silver Membership"
+        }
+    ]
+}

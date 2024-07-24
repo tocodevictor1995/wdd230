@@ -1,10 +1,8 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    const currentYearElement = document.getElementById('currentYear');
-    const lastModifiedElement = document.getElementById('lastModified');
- 
+// scripts/getDates.js
+document.addEventListener('DOMContentLoaded', () => {
     const currentYear = new Date().getFullYear();
-    currentYearElement.textContent = currentYear;
-    
+    document.getElementById('currentYear').textContent = currentYear;
+
     const lastModified = document.lastModified;
-    lastModifiedElement.textContent += ` ${lastModified}`;
+    document.getElementById('lastModified').textContent = `Last Modification: ${lastModified}`;
 });

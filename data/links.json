@@ -1,0 +1,39 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {"url": "week01/holygrial.html", "title": "Holy Grial"},
+                {"url": "week01/media-query.html", "title": "Media Query"},
+                {"url": "https://codepen.io/ijromerob/pen/BaemoPv", "title": "Applied Javascript Activity"}
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {"url": "week02/design.html", "title": "Design"},
+                {"url": "https://codepen.io/ijromerob/pen/ZENrEXP", "title": "Hamburger Menu"},
+                {"url": "week02/book%20of%20mormon.html", "title": "Book of Mormon - DOM Manipulation"}
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {"url": "week03/images/landscape.webp", "title": "WebP"},
+                {"url": "week03/lazyload.html", "title": "Lazy Loading"}
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {"url": "week04/example.html", "title": "Example Activity"}
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {"url": "week05/example.html", "title": "Example Activity"}
+            ]
+        }
+    ]
+}

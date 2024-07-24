@@ -113,7 +113,7 @@ main h1 {
     padding: 10px;
     background-color: var(--header-and-footer-bg);
     text-align: center;
-    color: white; /* Adicionado para garantir que o texto fique branco */
+    color: white;
 }
 
 .card ul {

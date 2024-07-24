@@ -8,7 +8,7 @@ async function getLinks() {
             throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        displayLinks(data.weeks); // Certifique-se de que o campo JSON corresponde
+        displayLinks(data.weeks); 
     } catch (error) {
         console.error('Fetch error: ', error);
     }
@@ -16,7 +16,7 @@ async function getLinks() {
 
 function displayLinks(weeks) {
     const activityLinks = document.getElementById('activity-links');
-    activityLinks.innerHTML = '';  // Limpa qualquer conteúdo existente
+    activityLinks.innerHTML = '';  
 
     weeks.forEach(week => {
         const listItem = document.createElement('li');

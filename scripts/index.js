@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Manipulação de contagem de visitas
+ 
     const visitsElement = document.querySelector('.visits');
     let visitsNumber = localStorage.getItem('visits') ? Number(localStorage.getItem('visits')) : 0;
 
@@ -7,11 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('visits', visitsNumber);
     visitsElement.textContent = visitsNumber;
 
-    // Atualiza o ano atual e a última modificação
     document.getElementById("currentYear").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent += document.lastModified;
 
-    // Fetch e exibição das informações meteorológicas
     const currentWeather = document.querySelector('#current-weather');
     const currentTemperature = document.querySelector('#temperature');
     const weatherIcon = document.createElement('img');
@@ -42,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentTemperature.innerHTML = `${temp}&deg;F`;
     }
 
-    // Botão de menu hamburguer
+    
     const hButton = document.querySelector('#menu');
     const navigation = document.querySelector('.navigation');
 
@@ -51,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hButton.classList.toggle('open');
     });
 
-    // Botão de modo escuro
+
     const darkModeButton = document.querySelector('#dm-button');
 
     darkModeButton.addEventListener('click', () => {

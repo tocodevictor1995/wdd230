@@ -1,5 +1,5 @@
-const apiKey = 'sua_chave_api';  // Substitua pela sua chave de API do OpenWeatherMap
-const cityId = '6322752';  // ID da cidade de Curitiba
+const apiKey = 'sua_chave_api';  
+const cityId = '6322752';  
 
 async function fetchWeather() {
     const url = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=${apiKey}&units=metric&lang=pt_br`;
